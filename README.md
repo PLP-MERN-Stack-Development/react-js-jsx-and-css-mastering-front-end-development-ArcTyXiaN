@@ -1,70 +1,63 @@
-# React.js and Tailwind CSS Assignment
+# MyTASK
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+A modern task management application built with React and Tailwind CSS v4.
 
-## Assignment Overview
+## Features
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+- Create, complete, and delete tasks
+- Filter tasks by status (All, Active, Completed)
+- Light and dark theme toggle
+- Fully responsive design
 
-## Getting Started
+## Quick Start
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
+```bash
+# Install dependencies
+npm install
 
-## Files Included
+# Start development server
+npm run dev
+```
 
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
+Open `http://localhost:5173` in your browser.
 
-## Requirements
+## Tech Stack
 
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
+- React 18.2.0
+- Tailwind CSS v4
+- React Context API
 
 ## Project Structure
 
 ```
 src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
+├── components/      # Reusable UI components
+├── context/         # Theme context provider
+├── pages/          # Page components
+├── App.jsx         # Main app component
+└── main.jsx        # Entry point
 ```
 
-## Submission
+## Key Components
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+- **TaskManager** - Core task functionality
+- **ThemeContext** - Global theme state
+- **Layout** - Application wrapper
+- **Navbar** - Navigation with theme toggle
 
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
+## Notes
 
-## Resources
+- Tasks are stored in component state (resets on refresh)
+- Uses state-based navigation (no React Router)
+- Tailwind v4 syntax with `@import "tailwindcss"`
 
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+## Full Documentation
+
+For detailed information about components, implementation details, and development guidelines, see [FULL_DOCS.md](https://hackmd.io/@I5OyzHQDSGWGWqeLjg1tSg/ryUZcI_eWx).
+
+## See Live 
+[link](https://react-eight-azure-98.vercel.app/)
+
+## License
+
+MIT
